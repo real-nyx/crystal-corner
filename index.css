@@ -1,0 +1,243 @@
+ body {
+      margin: 0;
+      padding-bottom: 40px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .parent {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .firstDiv {
+      background-color: #E365D1;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .first_span, .second_span {
+      display: block;
+      font-size: 0.9rem;
+      color: white;
+    }
+
+    .secondDiv {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .telly {
+      font-weight: bold;
+      font-size: 1.3rem;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .items img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    .logoDiv {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+ 
+
+    .logo {
+      width: 100%;
+      max-width: 550px;
+      height: auto;
+    }
+
+    .thirdDiv {
+      padding: 10px;
+    }
+
+    .thirdDiv span {
+      display: block;
+      font-style: italic;
+      font-weight: bold;
+      color: gray;
+      line-height: 1.6;
+      margin: 4px auto;
+      max-width: 90%;
+    }
+
+    h3 {
+      text-align: center;
+      color: rgb(50, 48, 48);
+    }
+
+    .stackPhotos {
+      padding: 10px;
+    }
+
+    .stackPhotos img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .shiping {
+      height: 300px;
+      width: auto;
+    }
+
+    .amors {
+      padding: 10px;
+    }
+
+    .roll1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+
+    .item1, .item2 {
+      width: 130px;
+      padding: 5px;
+    }
+
+    .item1 img, .item2 img {
+      width: 100%;
+      height: auto;
+    }
+
+    .textDiv a {
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      color: rgb(29, 29, 29);
+      margin-top: 5px;
+    }
+
+    .textDiv a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 5px 20px;
+      border: 1px solid black;
+      background: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    #viewAllBtn {
+      display: block;
+      margin: 40px auto;
+      background: rgb(69, 65, 65);
+      color: white;
+      border: none;
+      padding: 10px 33px;
+      border-radius: 3px;
+    }
+
+    #viewAllBtn:hover {
+      background: gray;
+    }
+
+    .date {
+      font-size: 0.8rem;
+      display: block;
+      margin-top: 5px;
+    }
+
+    .footerDiv {
+      background: #333232;
+      height: 300px;
+    }
+
+    .finalSection {
+      background-color: #f5f5f5;
+      padding: 30px 20px;
+      text-align: center;
+      color: #333;
+    }
+    .finalSection p{
+      text-align: left;
+    }
+ 
+  
+  .emailDiv button{
+    height: 34px;
+    padding: 2px 32px;
+  }
+
+  input{
+    height: 30px;
+  }
+  #subscribe{
+    font-weight: bold;
+    background-color: rgb(35, 34, 34);
+    color: white;
+  }
+
+  .payment{
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+  }
+    .quick{
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+    .thirdDiv span{
+      text-align: center;
+    }
+    .imgDiv{
+      display: block;
+      margin: 0 auto;
+    }
+   .rights{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: gray;
+   }
+   .bag{
+    width: 34px;
+   }
+   .nav{
+    background:white;
+    position: absolute;
+    right: 0;
+    padding: 20px;
+    width: 100%;
+    display:none;
+    height: 100vh;
+   
+   }
+   .nav a{
+    text-decoration: none;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background:white;
+    display: block;
+    color: black;
+   }
+   a:hover{
+    background: #ccc;
+   }
+   .service{
+    border-bottom: 1px solid #ccc;
+   }
+   header{
+    align-items: center;
+   }
+    @media (min-width: 300px) {
+      .thirdDiv span {
+        font-size: 0.7rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .thirdDiv span {
+        font-size: 1rem;
+      }
+    }
