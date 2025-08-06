@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black Obsidian Bracelet</title>
+  <script src="main.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0 auto;
+      padding: 20px;
+      color: #444;
+    }
+
+    .img1-div {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .img1{
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .div2 {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .img{
+      width: 32%;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+   
+    .name{
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .shipping {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .ship-link {
+      color: #444;
+      text-decoration: underline;
+    }
+    .shop{
+      color: #5433eb;
+    }
+    .shop-butt{
+      background-color:#5433eb ;
+        color: #fff;
+        border:none;
+        border-radius: 3px;
+  }
+  header{
+    align-items: center;
+  }
+  .learn{
+      color: #444;
+    
+  }
+  .select{
+    padding: 10px;
+ width: 100%; 
+  }
+  .cart{
+    width:100%;
+    padding: 15px;
+    background-color: White;
+    border: 1px,solid,black;
+    font-weight: bold;
+  }
+  .cart:active{
+    background-color: lightskyblue;
+  }
+  .buy{
+     width:100%;
+    padding: 15px; 
+    background-color: #444;
+    border:none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .buy:active{
+    background-color: lightgray;
+  }
+  .dot{
+    font-size: 27px;
+    font-weight: bolder;
+
+  }
+  .back{
+    width :70%;
+    padding: 10px;
+    font-weight: bold;
+    margin-left: 15%;
+  }
+  .back:active{
+    background-color: lightskyblue;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="img1-div">
+    <div class="img1">
+      <img class="img1" src="energy3.webp" alt="Black Obsidian Bracelet">
+    </div>
+
+
+
+    <div class="name" id="productName"> Cleansing & Protection Wand </div>
+    <div class="price">$235.00 USD</div>
+    <div class="shipping">
+      <a class="ship-link" href="#">Shipping</a> calculated at checkout.
+    </div>
+  </div>
+  <p>
+    Pay in 2 interest-free installments of<strong>$17.00</strong> with<span class="shop"> shop <button class="shop-butt">Pay</button></span> <a href="#"><u class="learn">Learn more</u></a>
+  </p>
+  <span class="arrange">Arrangements </span>
+  <br>
+  <br>
+ 
+  <br>
+  <button class="cart" id="cartBtn">ADD TO CART</button>
+  <br>
+  <br>
+<button class="buy" onclick="sendOrder()" id="buyBtn">BUY IT NOW</button>
+  <br>
+  <br>
+  <p class="description">This collection was created for the intuitive soul who honors every layer of their journey — heart, mind, spirit, and energy. Each bracelet in the Soul Frequencies collection holds its own unique combination of high-vibrational crystals, yet they all work in harmony to support clarity, emotional healing, spiritual protection, and inner wisdom.
+  <br>
+  <br>
+  <br>
+  <strong class="dot">&#183;</strong>Amethyst soothes the mind and deepens spiritual connection
+<br>
+<br>
+
+<strong class="dot">&#183;</strong>Rose Quartz opens the heart to love and gentle healing
+<br>
+<br>
+
+<strong class="dot">&#183;</strong>Lapis Lazuli empowers truth, intuition, and divine communication
+<br>
+<br>
+
+<strong class="dot">&#183;</strong>Clear Quartz amplifies intention and purifies energy
+<br>
+<br>
+
+<strong class="dot">&#183;</strong>Fluorite brings focus, alignment, and energetic balance 
+<br>
+<br>
+<br>
+<br>
+Every bracelet is intuitively arranged, making each one as unique as the energy it’s meant to support. If you’re drawn to this collection, your spirit may be seeking alignment, healing, and a deeper connection to your soul’s truth. Let your chosen piece reflect the frequency you’re ready to embody.
+  </p>
+  <br>  <br> <br>  <br>  
+<button class="back" id="back"> &#8592; BACK TO ENERGY CLEANSING </button>
+<script>
+    const backBtn = document.getElementById('back');
+    backBtn.addEventListener('click', ()=>{
+        window.location.href = 'page10.html';
+    })
+  const orderCount = document.getElementById("orderCount");
+
+
+
+// function for sending email to client
+function sendOrder() {
+    const product = "Cleansing & Protection Wand";
+    const quantity = 1;
+    const price = "$235.00 USD";
+    const email = "divinehealer945@gmail.com";
+
+    const subject = "Purchase Order";
+    const body = `Hello,%0A%0AI would like to purchase:%0A- Product: ${product}%0A- Quantity: ${quantity}%0A- Price: $${price}%0AThank you!`;
+
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+  }
+
+  // logic for counting 
+  let cartCount = 0;
+  const buyNow = document.getElementById("cartBtn");
+  buyNow.addEventListener('click', ()=>{
+    let cartBox = cartCount+=1;
+    let saveingCartData = localStorage.setItem('cartCount', cartBox)
+    let savedCartData = localStorage.getItem('cartCount')
+    console.log(savedCartData)
+  })
+</script>
+</body>
+</html>
